@@ -1,0 +1,506 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    
+    margin-left: 240px;
+    margin-right: 240px;
+    
+}
+header{
+    background-color: rgb(40, 40, 47 );
+}
+nav{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.toggle-button{
+    margin-top : 20px ;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.toggle-button>img{
+    
+    width: 20px;
+    height: 20px;
+}
+.logo{
+    
+    padding: 2px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.nav-links li{
+    margin-top: 19px;
+    
+    list-style: none;
+}
+.nav-links a{
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.nav-links{
+    justify-content: space-around;
+    flex-basis: 50%;
+    display: flex;
+}
+.nav-search{
+    display: flex;
+    flex-basis: 30%;
+    justify-content: space-around;
+    
+}
+.nav-search p{
+    font-family: 'Ubuntu';
+    margin-top: 19px;
+    font-size: 18px;
+    color: white;
+    word-spacing: 2px;
+}
+.nav-search p > a{
+    font-family: 'Ubuntu';
+    margin-top: 15px;
+    font-size: 18px;
+    color: white;
+    word-spacing: 2px;
+    text-decoration: none;
+}
+.nav-search input{
+    font-size: 15px;
+    font-family: 'Ubuntu';
+    padding: 4px 0px 4px 7px;
+    height: 60%;
+    margin-top: 13px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 52, 66);
+}
+
+.btn-flex{
+    width: 350px;
+    display: none;
+}
+
+.flexbox-container{
+    display: flex;
+    position: relative;
+    top: 100px;
+}
+
+.mid-section{
+    position: relative;
+    
+    background-image: url('../images/Backgroung.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    color: white;
+}
+
+.mid-heading{
+    
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    padding: 10px;
+    padding-right: 0px;
+    line-height: 100px;
+}
+.mid-para{
+    
+    
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    padding-right: 0px;
+    font-size: 35px;
+    line-height: 48px;
+    color: rgb(192, 194, 197);
+    
+}
+
+.box-1{
+    
+    display: block;
+    width: 70%;
+    padding: 0px;
+    margin: 20px;
+}
+.box-1 > div{
+    position: relative;
+    top: 30px;
+    width: 90%;
+}
+
+.box-2{
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+    height: 600px;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.signup-form{
+    margin: 30px;
+}
+.signup-form > p{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    
+}
+
+.input-form{
+    border-radius: 5px;
+    border: 0.3px solid rgb(190, 190, 190);
+    width: 100%;
+    font-size: 15px;
+    padding: 15px;
+    padding-left: 8px;
+    margin: 2px;
+}
+.sign-up-btn{
+    color: white;
+    border-radius: 5px;
+    border: 0.3px solid rgb(190, 190, 190);
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    padding-left: 8px;
+    margin: 2px;
+    background-image: linear-gradient(to top , rgb(5, 197, 5) , rgb(52, 233, 52));
+    cursor: pointer;
+    
+}
+
+.para-accept{
+    
+    font-size: 17px;
+    text-align: center;
+    line-height: 23px;
+}
+
+.bottom-section{
+    height: 500px;
+}
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bottom-container > h1{
+    font-size: 70px;
+    padding: 16px;
+    font-weight: lighter;
+
+}
+.Git-teams{
+    font-size: 17px;
+    padding: 20px;
+}
+.Git-para{
+    
+    
+    width: 70%;
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 5px;
+}
+.sign-up-teams{
+    width: 20%;
+    padding: 13px;
+    margin: 20px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid rgb(199, 199, 199);
+    cursor: pointer;
+    color: rgb(70, 70, 253);
+    
+    
+}
+
+/*media query */
+
+
+
+@media all and ( max-width: 1532px ){
+
+    .flexbox-container{
+        flex-direction: column;
+        top: 20px;
+        align-items: center;
+    }
+    .sign-up-teams{
+        
+        font-size: 15px;
+        
+        
+    }
+    
+    .wrapper{
+        margin-left: 150px;
+    margin-right: 150px;
+
+    }
+    .box-1{
+        width: 100%;
+    }
+
+    .box-2{
+        height: 500px;
+        width: 60%;
+    }
+    .mid-section{
+        height: 1000px;
+    }
+    .box-1 > div{
+        text-align: center;
+        left: 45px;
+    }
+    .mid-para{
+        margin-bottom: 20px;
+        
+    }
+    .mid-heading{
+        font-size: 70px;
+    }
+    .mid-para{
+        font-size: 30px;  
+    }
+    
+    
+    
+    
+}
+
+@media all and (max-width : 1244px){
+
+    .wrapper{
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .mid-heading{
+        padding: 0px;
+        font-size: 50px; 
+        line-height: 70px;
+    }
+    .mid-para{
+        padding: 0px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .box-1 > div{
+        top: 0px;
+        left: 20px;
+    }
+    .box-2{
+        font-size: 13px;
+    }
+    .sign-up-btn{
+        
+        font-size: 16px;
+       
+        
+    }
+    
+    .sign-up-teams{
+        
+        width: 25%;
+        
+        
+    }
+    .para-accept{
+        
+        font-size: 13px;
+        
+    }
+    .mid-section{
+        height: 850px;
+    }
+    .bottom-container>h1{
+        font-size: 50px;
+    }
+    
+    
+
+    
+     
+
+}
+@media all and (max-width: 1180px){
+    .nav-links>li{
+        display: none;
+    }
+    .nav-search>input{
+        display: none;
+    }
+    .nav-search>p{
+        display: none;
+    }
+    .toggle-button{
+        
+        display: block;
+    }
+    .nav-links {
+        justify-content: start;
+        
+        display: flex;
+    }
+}
+@media all and (max-width: 1382px){
+    .wrapper{
+        margin-left: 60px;
+    margin-right: 60px;
+
+    }
+    
+}
+@media all and (max-width : 767px){
+    .bottom-container > h1{
+        font-size: 50px;
+        
+    
+    }
+    .Git-teams{
+        font-size: 15px;
+        
+    }
+    .Git-para{
+        
+        
+        
+        font-size: 20px;
+        
+    }
+
+    .wrapper{
+        margin-left: 10px;
+    margin-right: 10px;
+
+    }
+    .flexbox-container{
+        
+        top: 8px;
+        
+    }
+    .box-2{
+        display: none;
+    }
+    .btn-flex{
+        display: flex;
+    }
+    .mid-section{
+        height: 400px;
+        
+    }
+
+    
+    .btn-flex{
+        width: 250px;
+        
+    }
+    .sign-up-teams{
+        
+        width: 33%;
+        
+        
+    }
+    
+
+    .btn-flex{
+        width: 350px;
+        display: flex;
+    }
+
+    
+
+}
+@media all and (max-width : 562px){
+
+    .mid-heading{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .mid-para{
+        padding: 0px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .mid-section{
+        height: 460px;
+        
+    }
+    .sign-up-teams{
+        
+        width: 40%;
+        
+        
+    }
+    .bottom-container > h1{
+        font-size: 30px;
+        
+    
+    }
+    .Git-teams{
+        font-size: 13px;
+        
+    }
+    .Git-para{
+        
+        
+        
+        font-size: 18px;
+        
+    }
+    
+
+    .btn-flex{
+        width: 350px;
+        display: flex;
+    }
+
+    
+    
+
+}
+@media all and (max-width : 410px){
+
+    
+    .sign-up-teams{
+        
+        width: 50%;
+        
+    }
+    
+    .btn-flex{
+        width: 270px;
+        display: flex;
+    }
+
+    
+       
+
+}
